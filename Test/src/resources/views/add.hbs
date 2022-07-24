@@ -1,0 +1,38 @@
+<div class="card">
+  <div class="card-header">
+    THÊM KHÓA HỌC
+  </div>
+  <div class="card-body">
+    <form action="/add" method="POST">
+        <div class="input-group mb-3">
+          <label for="name" class="input-group-text" id="basic-addon1">Tên khóa học</label>
+          <input type="text" id="name" name="name" value="" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="description" class="input-group-text" id="basic-addon2">Mô tả chi tiết</label>
+          <input type="text" id="description" name="description" value="" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="image" class="input-group-text" id="basic-addon2">Hình ảnh</label>
+          <input type="text" id="image" name="image" value="" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="price" class="input-group-text" id="basic-addon2">Giá</label>
+          <input type="text" id="price" name="price" value="" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="gender" class="input-group-text" id="basic-addon2">Giới Tính</label>
+          <input type="radio" id="gender" name="gender" value="1" placeholder="" aria-label="" aria-describedby="basic-addon2">Nam
+          <input type="radio" id="gender" name="gender" value="0" placeholder="" aria-label="" aria-describedby="basic-addon2">Nữ
+        </div>
+        
+        <div class="input-group">
+          <button type="submit" class="btn btn-primary" style="color:white; margin-top:40px">Thêm Mới</button>
+        </div>
+    </form>
+  </div>
+</div>

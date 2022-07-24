@@ -1,0 +1,19 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Khóa học HTML/CSS",
+      "description": "Khóa học bắt đầu từ số 0 đến chuyên nghiệp"
+    },
+    {
+      "id": 2,
+      "name": "Khóa học Responsive",
+      "description": "Khóa học giúp website chỉn chu từ web đến mobile"
+    },
+    {
+      "name": "Khóa học NodeJS & Express",
+      "description": "Khóa học lập trình backend sử dụng công nghệ NodeJ, Express",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<h1 class="h1-banner" style="text-align:center;">BẢNG KHÓA HỌC</h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Hình Ảnh</th>
+      <th scope="col">TÊN KHÓA HỌC</th>
+      <th scope="col">MÔ TẢ</th>
+      <th scope="col">Giá</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each courses}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td><img src="{{this.image}}" alt="" width="150px"></td>
+      <td>{{this.name}}</td>
+      <td>{{this.description}}</td>
+      <td>{{this.price}}</td>
+      <td>
+        <a href="/edit/{{this.id}}">
+          <span>Sửa</span>
+        </a>
+      </td>
+      <td>
+        <a href="/delete/{{this.id}}">
+          <span>Xóa</span>
+        </a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+<a type="button" class="btn btn-primary" style="color:white" href="/add">THÊM MỚI KHÓA HỌC</a>

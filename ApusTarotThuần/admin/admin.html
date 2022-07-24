@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/Home/logoApus.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a314b80a3a.js" crossorigin="anonymous"></script>
+    <title>Apus Tarot Shop - Hệ thống quản trị</title>
+</head>
+<body>
+    <div id="wrapper" class="show row no-gutters"> 
+        <!-- LEFT -->
+        <div class="c-2 col-md-2 col-sm-2">
+            <!-- NAV HEADER -->
+            <div class="nav-header">
+                <div class="nav-header__logo">
+                    <a href="">
+                        <b class="nav-header__brand">
+                            APUS TAROT SHOP
+                        </b>
+                    </a>
+                </div>
+            </div>
+            <!-- MENU -->
+            <div class="menu__wrapper">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <i class="menu__icon fas fa-cube"></i>
+                        <span class="menu__text">Sản Phẩm</span>
+                        <i class="menu__icon icon__dropdown fas fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                        <i class="menu__icon fas fa-box"></i>
+                        <span class="menu__text">Đơn Hàng</span>
+                        <i class="menu__icon icon__dropdown fas fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                        <i class="menu__icon fas fa-user"></i>
+                        <span class="menu__text">Khách Hàng</span>
+                        <i class="menu__icon icon__dropdown fas fa-angle-right"></i>
+                    </li>
+                    <li class="menu__item">
+                        <i class="menu__icon fas fa-sliders-h"></i>
+                        <span class="menu__text">Slider</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- RIGHT -->
+        <div class="c-10 col-md-10 col-sm-10">
+            <!-- HEADER -->
+            <div class="header">
+                <div class="header-content clearfix">
+                    <div class="header-left">
+                        
+                    </div>
+                    <div class="header-right">
+                        <ul class="header-right__list">
+                            <li class="header-right__item">
+                                <i class="header-right__icon ti-email"></i>
+                                <span class="header-right__notice">3</span>
+                            </li>
+                            <li class="header-right__item">
+                                <i class="header-right__icon ti-bell"></i>
+                                <span class="header-right__notice">1</span>
+                            </li>
+                            <li class="header-right__item">
+                                <div class="header-right__user">
+                                    <img src="/image/Customer/tieu-su-trieu-le-dinh-11.jpg" alt="" class="header-right__user-img">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- MAIN CONTENT -->
+            <div class="main">
+                <div class="row">
+                    <div class="c-12 col-md-12 col-sm-12">
+                        <h3 class="title-table">THÔNG TIN SẢN PHẨM</h3>
+                        <div class="table-data__tool row">
+                            <div class="table-data__tool--left row c-7 col-md-7 col-sm-7">
+                                <div class="input__wrapper c-7 col-md-7 col-sm-7">
+                                    <input type="text" name="searchData" class="input__search form-control" placeholder="Nhập thông tin tìm kiếm...">
+                                    <i class="input__search--icon fas fa-search"></i>
+                                </div>
+                                <div class="select__wrapper c-5 col-md-5 col-sm-5">
+                                    <select name="time" id="" class="select__input form-control">
+                                        <option value="" select="selected">Today</option>
+                                        <option value="">3 Days</option>
+                                        <option value="">1 Week</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-data__tool--right row c-5 col-md-5 col-sm-5">
+                                <button class="btn btn-primary btn__add">THÊM SẢN PHẨM</button>
+                            </div>
+                        </div>
+                        <div class="table-data__wrapper">
+                            <table class="table-data__content" border="2" cellspacing="1">
+                                <thead>
+                                    <tr>
+                                        <th>Hình Ảnh</th>
+                                        <th>Tên Sản Phẩm</th>
+                                        <th>Giá</th>
+                                        <th>Mô Tả Ngắn Gọn</th>
+                                        <th>Tình Trạng</th>
+                                        <th colspan="2"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="shrink table-image">
+                                            <img title="Every Tarot" src="/image/Product/everydaytarot-2-300x300.jpg" class="table-data__image"></img>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>Every Tarot</span>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>650.000₫</span>
+                                        </td>
+                                        <td class="shrink table-descritpion">
+                                            <span>
+                                                Everyday Tarot đem đến một cách tiếp cận mới mẻ với Tarot, 
+                                                với bộ bài hiện đại, được minh họa đẹp mắt, một hướng dẫn hữu ích cho các lá bài, 
+                                                và một hộp lưu niệm nhỏ nhắn xinh xắn.
+                                            </span>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>Còn hàng</span>
+                                        </td>
+                                        <td class="shrink" style="width:10%">
+                                            <span class="table-data__edit">
+                                                <i class="table-data__icon fas fa-edit"></i>
+                                            </span>
+                                            <span class="table-data__delete">
+                                                <i class="table-data__icon fas fa-trash"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="shrink table-image">
+                                            <img title="Every Tarot" src="/image/Product/everydaytarot-2-300x300.jpg" class="table-data__image"></img>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>Every Tarot</span>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>650.000₫</span>
+                                        </td>
+                                        <td class="shrink table-descritpion">
+                                            <span>
+                                                Everyday Tarot đem đến một cách tiếp cận mới mẻ với Tarot, 
+                                                với bộ bài hiện đại, được minh họa đẹp mắt, một hướng dẫn hữu ích cho các lá bài, 
+                                                và một hộp lưu niệm nhỏ nhắn xinh xắn.
+                                            </span>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>Còn hàng</span>
+                                        </td>
+                                        <td class="shrink" style="width:10%">
+                                            <span class="table-data__edit">
+                                                <i class="table-data__icon fas fa-edit"></i>
+                                            </span>
+                                            <span class="table-data__delete">
+                                                <i class="table-data__icon fas fa-trash"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="shrink table-image">
+                                            <img title="Every Tarot" src="/image/Product/everydaytarot-2-300x300.jpg" class="table-data__image"></img>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>Every Tarot</span>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>650.000₫</span>
+                                        </td>
+                                        <td class="shrink table-descritpion">
+                                            <span>
+                                                Everyday Tarot đem đến một cách tiếp cận mới mẻ với Tarot, 
+                                                với bộ bài hiện đại, được minh họa đẹp mắt, một hướng dẫn hữu ích cho các lá bài, 
+                                                và một hộp lưu niệm nhỏ nhắn xinh xắn.
+                                            </span>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>Còn hàng</span>
+                                        </td>
+                                        <td class="shrink" style="width:10%">
+                                            <span class="table-data__edit">
+                                                <i class="table-data__icon fas fa-edit"></i>
+                                            </span>
+                                            <span class="table-data__delete">
+                                                <i class="table-data__icon fas fa-trash"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="shrink table-image">
+                                            <img title="Every Tarot" src="/image/Product/everydaytarot-2-300x300.jpg" class="table-data__image"></img>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>Every Tarot</span>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>650.000₫</span>
+                                        </td>
+                                        <td class="shrink table-descritpion">
+                                            <span>
+                                                Everyday Tarot đem đến một cách tiếp cận mới mẻ với Tarot, 
+                                                với bộ bài hiện đại, được minh họa đẹp mắt, một hướng dẫn hữu ích cho các lá bài, 
+                                                và một hộp lưu niệm nhỏ nhắn xinh xắn.
+                                            </span>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>Còn hàng</span>
+                                        </td>
+                                        <td class="shrink" style="width:10%">
+                                            <span class="table-data__edit">
+                                                <i class="table-data__icon fas fa-edit"></i>
+                                            </span>
+                                            <span class="table-data__delete">
+                                                <i class="table-data__icon fas fa-trash"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="shrink table-image">
+                                            <img title="Every Tarot" src="/image/Product/everydaytarot-2-300x300.jpg" class="table-data__image"></img>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>Every Tarot</span>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>650.000₫</span>
+                                        </td>
+                                        <td class="shrink table-descritpion">
+                                            <span>
+                                                Everyday Tarot đem đến một cách tiếp cận mới mẻ với Tarot, 
+                                                với bộ bài hiện đại, được minh họa đẹp mắt, một hướng dẫn hữu ích cho các lá bài, 
+                                                và một hộp lưu niệm nhỏ nhắn xinh xắn.
+                                            </span>
+                                        </td>
+                                        <td class="shrink">
+                                            <span>Còn hàng</span>
+                                        </td>
+                                        <td class="shrink" style="width:10%">
+                                            <span class="table-data__edit">
+                                                <i class="table-data__icon fas fa-edit"></i>
+                                            </span>
+                                            <span class="table-data__delete">
+                                                <i class="table-data__icon fas fa-trash"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Modal-->
+            <div class="modal js-modal">
+                <div class="modal-container js-modal-container">
+                    <div class="modal-close js-modal-close">
+                        <i class="ti-close"></i>
+                    </div>
+                    <header class="modal-header">
+                        <i class="ti-bag modal-header-icon">
+                            THÊM MỚI DANH MỤC
+                        </i>
+                    </header>
+                    <form action="">
+                        <div class="modal-body">
+                            <label for="ticket-quantity" class="modal-label">
+                                <i class="fas fa-list"></i>
+                                Tên danh mục
+                            </label>
+                            <input type="text" class="modal-input" placeholder="Nhập danh mục" id="ticket-quantity">
+                            
+                            <label for="ticket-email" class="modal-label">
+                                <i class="fas fa-link"></i>
+                                Đường dẫn
+                            </label>
+                            <input type="text" class="modal-input" placeholder="Nhập đường dẫn" id="ticket-email">
+                            
+                            <button class="modal__btn-add" type="submit">
+                                Thêm mới
+                            </button>
+                        </div>
+                    </form>
+                    <footer class="modal-footer">
+                        <p class="modal-help">
+                            Need 
+                            <a href="">help?</a>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+            <script>
+                const btnAdd = document.querySelector('.btn__add');
+                const modal = document.querySelector('.js-modal');
+                const modalClose = document.querySelector('.js-modal-close');
+
+                btnAdd.onclick = () =>{
+                    modal.style.display = 'block';
+                }
+
+                modalClose.onclick = () =>{
+                    modal.style.display = 'none';
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
